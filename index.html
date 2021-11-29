@@ -134,7 +134,8 @@
                 O CSS pode ser escrito dentro do arquivo HTML, utilizando o style como elemento &lt;style&gt; ou como atributo de algum outro elemento &lt;p style=""""&gt;. Assim como também pode ser escrito em um arquivo separado, apenas de CSS, importando-o no documento HTML da seguinte forma:
             </p>
             <pre><code>         
-    &lt;link rel=”stylesheet” href=”nome_do_arquivo_css.css”&gt;
+    &lt;link rel=”stylesheet”
+     href=”nome_do_arquivo_css.css”&gt;
             </code></pre>
             <p>
                 Porém, algo muito importante a ser destacado é a possibilidade de usar mais de um arquivo CSS ao mesmo tempo, para estilizar a aplicação. Daí a palavra “cascata”. Isso permite várias interações diferentes, porém é preciso tomar cuidado para não se perder e deixar o código confuso, seguindo sempre as regras para isso.
@@ -171,7 +172,8 @@
                 Quanto em um arquivo separado, sendo importado dentro do atributo desse mesmo elemento:
             </p>
             <pre><code>
-                &lt;script src=”nome_do_arquivo_js.js”&gt; &lt;/script&gt;
+            &lt;script src=”nome_do_arquivo_js.js”&gt;
+                &lt;/script&gt;
             </code></pre>
             <p>
                 Algo importante a ser destacado é que essa linguagem pode tanto ser usada do lado do cliente, como do lado do servidor, utilizando de tecnologias necessárias para isso, como o Node.js.
