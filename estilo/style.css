@@ -1,0 +1,341 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fontes/BebasNeue-Regular.ttf') format('opentype');
+    font-weight: normal;
+
+    font-family: 'Mandhor Alemp';
+    src:url('../fontes/Mandhor-ALEmp.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+
+    --cor0: #D9A036;
+    --cor1: #FFC559;
+    --cor2: #23DBF9;
+    --cor3: #FF64BD;
+
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-titulos: 'Mandhor Alemp', cursive;
+}
+
+*{  
+
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #1dc1da3f;
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after{
+    content: '\00A0\1f517';
+}
+header{
+    background-color: rgb(36, 35, 35);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    min-height: 150px;
+}
+header >h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.452);
+    font-weight: bold;
+}
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
+    color: var(--cor2);
+    
+}
+
+nav {
+    background-size: 100% 5px;
+    background-position-x: 0px;
+    padding: 10px;
+    text-align: center;
+}    
+/*nav a{
+    background-color: var(--cor2);
+    color: rgb(119, 111, 111);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.8s;
+    text-align: justify;
+
+    display: inline-flex;
+}
+*/
+
+/*nav a:hover{
+    
+    background-color: #FF64BD;
+    color: white;
+    align-items: center;
+    text-shadow: 0px 0px 20px #000;
+    transition-duration: 0.8s;
+
+}
+*/
+.mymove {
+    position: relative;
+    animation: mymove 5s alternate-reverse;
+  }
+
+@keyframes mymove {
+    0% {left: 0px; }
+    100% {left: -300px; }
+  }
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    background-color: white;
+}
+
+main h1{
+    color: black;
+    font-family: var(--fonte-destaque);
+    font-size: 1.8em;
+    font-weight: normal;
+    text-align: right;
+}
+
+main h2{
+    font-family: var(--fonte-titulos);
+    color: #1dc0da;
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+    text-indent: 6px;
+    border-radius: 3px;
+    font-weight: normal;
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.0em;
+    line-height: 2.0em;
+}
+
+main code{
+    color: var(--cor3);
+}
+main ul.ulone{
+    list-style-type:'\2714\00A0\00A0';
+    list-style-position: inside;
+}
+
+
+a.externo{
+    text-decoration: none;
+    font-weight: bold;
+    color:var(--cor2);
+    background-color: rgba(238, 130, 238, 0.527);
+    font-size: 1em;
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: #000;
+    transition-duration: 0.8s;
+}
+
+main strong{
+    color: var(--cor3);
+}
+main img{
+    width: 100%;
+}
+
+main img.pequeno{
+    display: block;
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: 0%;
+    margin-top: -30px;    
+}
+main img.ajusteimg{
+    display: block;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside{
+    background-color: #60dbeeab;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+.aside1{
+    margin-bottom: 20px;
+}
+
+aside > h3{
+    background-color: #1fa8bd;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+}
+
+aside input {
+    border-radius: 5px;
+    border: solid .5px #FFF;
+    background-color: #FFF;
+    margin-bottom: 1em;
+    padding: 1.8em 7em;
+    position: block;
+}
+
+.button {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    
+    background-color: #ffffff;
+    font-family: var(--fonte-destaque);
+}
+
+.button{
+    position: inherit;
+    display: inline-block;
+    padding: 12px 15px;
+    color: #FF64BD;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.8s;
+
+}
+
+
+
+.button:hover{
+    color: #255784;
+    background-color: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1.0s;
+
+}
+
+
+a span{
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #23DBF9);
+}
+.button:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+
+}
+
+a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #23DBF9);
+}
+.button:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+
+}
+
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #FF64BD);
+}
+.button:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+
+}
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #FF64BD);
+}
+.button:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.uledit{
+    text-decoration: none;
+    color: #187886;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+      
+}
+.uledit::after{
+    content: '\00A0\1F517';
+}
+
+footer{
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer a {
+    color: var(--cor2);
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover{
+    color: black;
+    text-decoration: underline;
+    transition-duration: 0.8s;
+
+}

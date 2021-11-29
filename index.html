@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Desenvolvimento Web</title>
+</head>
+<body>
+    <header>
+        <h1>Desenvolvimento web e suas tecnologias em um só lugar</h1>
+        <p>
+            O que você sempre quis saber sobre o mundo web, em um único lugar
+        </p>
+
+        <nav class="mymove">
+            <a href="#" class="button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Home
+            </a>
+            <a href="#" class="button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Notícias
+            </a>
+            <a href="#" class="button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Curiosidades
+            </a>
+            <a href="#" class="button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Fale Conosco</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>
+                HTML, CSS e Javascript, quais as diferenças?
+            </h1>
+            <p>
+                Essas são as três principais linguagens utilizadas no front-end da nossa aplicação, ou seja, são utilizadas do lado do cliente no próprio navegador. <strong>Mas qual será a diferença entre elas</strong>? Será que todas de fato são linguagens de programação? Descubra mais aqui nesse artigo!
+            </p>
+            <h1>
+                Um pouco da história de cada uma
+            </h1>
+            <p>
+                Tente imaginar como eram alguns anos atrás, em que as empresas que desejavam compartilhar documentos entre si, ou entre seus próprios funcionários não tinham a possibilidade de fazer isso de forma rápida e prática como hoje, em que com apenas com um clique conseguimos fazer todo esse transporte. Para eles, era necessário utilizar de outras ferramentas que demandam muito mais tempo. Sendo assim, em 1991, <a href="https://canaltech.com.br/celebridade/tim-berners-lee/" target="_blank" class="externo">Tim Berners-Lee</a> teve uma grande ideia que não apenas facilitaria o dia a dia de empresas, mas mudaria o mundo: ele projetou o HTML.
+            </p>
+            <p>
+                Essa linguagem de marcação, portanto, havia sido desenvolvida para possibilitar o compartilhamento de documentos de forma mais prática. Porém, a partir do ano seguinte, foi criada a <a href="https://www.tecmundo.com.br/web/759-o-que-e-world-wide-web-.htm" target="_blank" class="externo">World Wide Web (WWW)</a> , uma rede de alcance mundial, tornando o HTML uma ferramenta utilizada para tudo e por todos.
+            </p>
+            <p>
+                Já o CSS surgiu como consequência desse grande crescimento do HTML. Quanto mais o HTML era utilizado, mais os desenvolvedores usavam da criatividade para deixar as páginas bonitas e estilosas. Porém, toda essa parte estética era escrita no mesmo arquivo da parte estrutural, deixando-os gigantes e cada vez mais difíceis de entender. Sendo assim, em 1995, foi criado o CSS para tomar conta da parte estética da página, de forma separada da estrutura, papel do HTML.
+            </p>
+            <p>
+                Por fim, o Javascript foi criado a partir de uma grande competição entre gigantes do mercado na época: <strong>Microsoft</strong> e<strong> Netscape</strong>.
+            </p>
+            <p>
+                Tudo começou com a criação de uma linguagem de servidor pela Netscape para ser implantada nos servidores web da empresa. Quando a Microsoft descobriu que essa ideia poderia ter sucesso, não perdeu tempo e começou a desenvolver a linguagem JScript para implementar nos seus próprios servidores web ISS. Percebendo que sua ideia estava sendo copiada, a Netscape decidiu desenvolver uma tecnologia do lado do cliente, que rodasse no próprio navegador. Ela acabou tornando tudo mais rápido. Por isso, a Microsoft novamente percebeu uma grande oportunidade de mercado, e resolveu desenvolver um sistema semelhante ao da empresa concorrente.
+            </p>
+            <p>
+                Existiam então duas tecnologias <strong>“client-side”: JScript da Microsoft</strong> e <strong>Javascript da Netcape</strong>, cada uma funcionando apenas nos navegadores das respectivas empresas. Para padronizar o Javascript, a Netscape não perdeu tempo e o enviou para a empresa ECMA, permitindo sua incorporação à maioria dos navegadores existentes. A partir daí surgiu o <strong>ECMAscript</strong>, que nada mais era do que o novo nome para o Javascript, mesmo até hoje não sendo muito utilizado.
+            </p>
+
+            <h2>
+                HTML
+            </h2>
+            <picture>
+                <img src="imagens/html5.png" alt="Imagem do HTML 5" class="pequeno">
+            </picture>
+            <p>
+                Seu nome tem origem do inglês <strong>Hyper Text Markup Language</strong>, que significa <q>linguagem de marcação de hipertexto</q>.
+            </p>
+            <p>
+                Como assim <q>linguagem de marcação</q>? Pois é, o HTML não é considerado uma linguagem de programação como as demais e você já vai descobrir o motivo disso.
+            </p>
+            <p>
+                Imagine uma página web, como essa mesmo que você esta lendo agora. É possível perceber que existem diversos elementos separados, como cabeçalho, título, parágrafos, imagens e muitos outros. Toda a organização desses elementos é feita pelo HTML. Ele é utilizado para criar toda a estrutura da página e, para isso, utiliza as famosas tags (etiquetas) para sinalizar onde cada tipo de elemento será implementado.
+            </p>
+            <p>
+                Por exemplo, se você deseja inserir um parágrafo na tela, poderá utilizar a tag <code>&lt;p&gt;&lt;/p&gt;</code> para isso, colocando o texto desejado dentro do elemento, como mostrado abaixo:
+            </p>
+                <pre><code>
+                &lt;p&gt;Este é um parágrafo&lt;/p&gt;
+            </code></pre>bor
+            <p>
+                Sendo assim, existem diversas tags de diversas estruturas para montar o esqueleto da página. Mas, como é possível deixar esse parágrafo azul? Ou mudar a fonte da letra? Aí entra a nossa próxima tecnologia: CSS.
+            </p>
+            <h2>
+                CSS
+            </h2>
+            <picture>
+                <img src="imagens/icons8-ficheiro-css-96.png" alt="Imagem do CSS" class="pequeno">
+            </picture>
+            <p>
+                Cascading Style Sheet, mais conhecido como CSS, é uma linguagem de estilos que, assim como o HTML, também não é considerada uma linguagem de programação. Ela é responsável por separar a parte estrutural da aplicação (que ficará nas mãos do HTML) da parte estética. Para utilizar o CSS, usamos da seguinte sintaxe:
+            </p>
+            <pre><code>
+                seletor {
+                    propriedade: valor;
+                }
+            </code></pre>
+            <p>
+                O seletor será o elemento que queremos estilizar (podendo ser uma tag, uma classe, um identificador...), a propriedade será o que iremos alterar (como color, font-size, width...) e o valor será de fato a alteração (como por exemplo: red para color, 18px para font-size e assim por diante).
+            </p>
+            <p>
+                Sendo assim, quando utilizamos uma tag HTML, como o que usamos de exemplo acima, podemos estilizá-la da seguinte forma:
+            </p>
+            <pre><code>
+                p {
+                    color: blue;
+                }
+            </code></pre>
+            <p>
+                Com isso, todos os parágrafos ficarão azuis.
+            </p>
+            <p>
+                Mais uma informação interessante: se traduzirmos o nome dessa tecnologia, teremos “folha de estilo em cascata”. O que significa isso?
+            </p>
+            <p>
+                O CSS pode ser escrito dentro do arquivo HTML, utilizando o style como elemento &lt;style&gt; ou como atributo de algum outro elemento &lt;p style=""""&gt;. Assim como também pode ser escrito em um arquivo separado, apenas de CSS, importando-o no documento HTML da seguinte forma:
+            </p>
+            <pre><code>         
+    &lt;link rel=”stylesheet” href=”nome_do_arquivo_css.css”&gt;
+            </code></pre>
+            <p>
+                Porém, algo muito importante a ser destacado é a possibilidade de usar mais de um arquivo CSS ao mesmo tempo, para estilizar a aplicação. Daí a palavra “cascata”. Isso permite várias interações diferentes, porém é preciso tomar cuidado para não se perder e deixar o código confuso, seguindo sempre as regras para isso.
+            </p>
+            <h2>
+                Javascript
+            </h2>
+            <picture>
+                <img src="imagens/icons8-javascript-128.png" alt="Imagem do JavaScript" class="pequeno">
+            <p>
+                Para completar a grande tríade do desenvolvimento front-end, temos o Javascript, a única linguagem de programação das 3 tecnologias citadas.
+            </p>
+            <p>
+                Você conseguiu perceber que já criamos a estrutura da página com o HTML e já estilizamos os elementos com o CSS. Mas e as funcionalidades dinâmicas que vemos quando abrimos um site, como acontecem?
+            </p>
+            <p>
+                Isso é feito pelo Javascript. Ele adiciona movimento às páginas web, além de permitir o processamento e transformação de dados enviados e recebidos. Ele permite criar conteúdos que se atualizam de forma dinâmica e animada, dando vida às aplicações que antes eram apenas estruturadas com HTML de forma estática.
+            </p>
+            <p>
+                Sempre que vir uma caixinha de alerta apitando em um site, ou um mecanismo de autocomplete em algum campo, saiba que é o Javascript agindo. Um exemplo de código utilizando a caixa de alerta:
+            </p>
+            <pre><code>
+                alert(‘Hello World’); 
+            </code></pre>
+            <p>
+                Assim como o CSS, o Javascript pode ser escrito tanto dentro do código HTML:
+            </p>
+            <pre><code>
+                &lt;script&gt;
+                    alert(‘Hello World’); 
+                &lt;/script&gt;
+            </code></pre>
+            <p>
+                Quanto em um arquivo separado, sendo importado dentro do atributo desse mesmo elemento:
+            </p>
+            <pre><code>
+                &lt;script src=”nome_do_arquivo_js.js”&gt; &lt;/script&gt;
+            </code></pre>
+            <p>
+                Algo importante a ser destacado é que essa linguagem pode tanto ser usada do lado do cliente, como do lado do servidor, utilizando de tecnologias necessárias para isso, como o Node.js.
+            </p>
+
+            <h1>
+                O papel de cada uma na aplicação
+            </h1>
+            <p>
+                Portanto, depois de conhecer um pouco de cada uma dessas tecnologias, é possível perceber as diferentes funções que desempenham dentro de uma página web:
+            </p>
+            <ul class="ulone">
+                <li><strong>HTML:</strong> linguagem de marcação utilizada para estruturar os elementos da página, como parágrafos, links, títulos, tabelas, imagens e até vídeos.
+
+                </li>
+                <li>
+                    <strong>CSS:</strong> linguagem de estilos utilizada para definir cores, fontes, tamanhos, posicionamento e qualquer outro valor estético para os elementos da página.
+                </li>
+                <li>
+                    <strong>Javascript:</strong> linguagem de programação utilizada para deixar a página com mais movimento, podendo atualizar elementos dinamicamente e lidar melhor com dados enviados e recebidos na página.
+                </li>
+            </ul>
+            <p>
+                Comparando agora cada uma delas, podemos utilizar de exemplo o corpo humano como uma página web da seguinte forma:
+            </p>
+            <img src="imagens/representacao.jpg" alt="Descrição sobre linguagem de programação" class="ajusteimg">
+            <p>
+                <strong>
+                    O HTML é o esqueleto, composto dos ossos que o sustenta. O CSS é a pele, cabelo e roupas, criando o visual que realmente enxergamos quando olhamos para alguma pessoa. E por fim, o Javascript é o músculo, que dá movimento ao corpo.
+                </strong>
+            </p>
+            <aside class="aside1">
+                <h3>
+                    Quer aprender mais sobre HTML, CSS e Javascript? Veja:
+                </h3>
+                
+                <ul >
+                    <li>
+                        <a href="https://www.alura.com.br/formacao-html-e-css" target="_blank" class="uledit">Formação HTML e CSS</a>
+                    </li>
+                    <li>
+                        <a href="https://www.alura.com.br/formacao-front-end" target="_blank" class="uledit">Formação Front-end</a>
+                    </li>
+                    <li>
+                        <a href="https://www.alura.com.br/curso-online-javascript-introducao" target="_blank" class="uledit">Curso de JavaScript: primeiros passos com a linguagem</a>
+                    </li>
+                    <li>
+                        <a href="https://www.alura.com.br/curso-online-javascritpt-orientacao-objetos" target="_blank" class="uledit">Curso de JavaScript:Programando a Orientação a Objetos</a>
+                    </li>
+                </ul>
+                <p>Além disso, fique de olho aqui nos artigos! Teremos muitos conteúdos incríveis pela frente &#x1F600;</p>
+                <p>
+                    Veja outros artigos sobre <a href="https://www.alura.com.br/artigos/front-end" target="_blank" class="uledit">Front-end</a>
+                </p>
+            </aside>
+    
+        </article>
+    </main>
+    <footer>
+        <p>Site criado por <a href="https://github.com/rotyvk7" target="_blank" >Robert Azevedo</a></p>
+    </footer>
+</body>
+</html>
